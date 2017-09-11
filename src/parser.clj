@@ -3,7 +3,7 @@
 
 (defn valid-fact?
   [fact]
-  (not (= nil (re-matches #"^[a-z0-9]+\([a-z0-9,]+\)$" fact))))
+  (not (= nil (re-matches #"^[a-z0-9]+\([a-z0-9, ]+\)$" fact))))
 
 (defn valid-rule?
   [rule]
